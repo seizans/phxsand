@@ -14,7 +14,7 @@ defmodule Sand.Mixfile do
 
   def application do
     [mod: {Sand, []},
-     applications: [:phoenix, :phoenix_pubsub, :cowboy, :logger]]
+     applications: [:phoenix, :cowboy, :logger]]
   end
 
   defp elixirc_paths(:test), do: ["lib", "web", "test/support"]
@@ -22,7 +22,6 @@ defmodule Sand.Mixfile do
 
   defp deps do
     [{:phoenix, "~> 1.2.0"},
-     {:phoenix_pubsub, "~> 1.0"},
      {:cowboy, "~> 1.0"}]
   end
 end
