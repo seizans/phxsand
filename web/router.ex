@@ -7,5 +7,7 @@ defmodule Sand.Router do
 
   scope "/api", Sand do
     pipe_through :api
+
+    post "/hello", HelloController, :hello
   end
 end
