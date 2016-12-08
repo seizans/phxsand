@@ -27,7 +27,6 @@ defmodule Sand.Web do
       use Phoenix.Controller
 
       import Sand.Router.Helpers
-      import Sand.Gettext
     end
   end
 
@@ -40,7 +39,6 @@ defmodule Sand.Web do
 
       import Sand.Router.Helpers
       import Sand.ErrorHelpers
-      import Sand.Gettext
     end
   end
 
@@ -53,7 +51,6 @@ defmodule Sand.Web do
   def channel do
     quote do
       use Phoenix.Channel
-      import Sand.Gettext
     end
   end
 
